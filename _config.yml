@@ -3,3 +3,16 @@ include:
   - ".gitbook"
 plugins:
   - jekyll-remote-theme
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: "pages"
+      name: "README.md"
+    values:
+      layout: special
