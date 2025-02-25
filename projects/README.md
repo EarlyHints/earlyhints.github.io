@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 # My Projects
 
 Here, you'll find a collection of my cybersecurity and Python development projects, each designed to enhance network security, monitor activity, and identify vulnerabilities. From network monitoring tools to hands-on security implementations, these projects showcase my technical skills and passion for cybersecurity.
