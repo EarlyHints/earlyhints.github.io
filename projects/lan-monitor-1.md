@@ -8,7 +8,7 @@ description: How I set up a python app to monitor my home LAN and track websites
 
 I have a draytek router on my home netwrok and the process for keeping logs is rather simple. Got to System Mainenance > SysLog and configure the settings
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Because I want this program to be runnign 247 I am forwarding the data to my Dell rack server, it's also pretty convient because I can use IDRAC to connect at any point and monitor on the fly.
 
@@ -16,7 +16,7 @@ Now that we have these settings confgured we download the [Draytek Syslog Utilit
 
 The last step is to go into the utility and configure the database record.
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As you can see I'm only saving the User Access data as that's where all the fun stuff is!
 
@@ -26,7 +26,7 @@ We're using a tool called pyodbc to access and query databases in python. So the
 
 Opening up the database we see the LOG table is what we want.
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 I crafted the following SQL query to get the data from the database for a specific hour of a specific day
 
@@ -233,7 +233,7 @@ for num, mac in enumerate(macs):
 
 I have obfuscated the MAC addresses and actual data for security purposes but this is how the data apears.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Findings
 

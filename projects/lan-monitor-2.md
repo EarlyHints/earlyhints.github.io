@@ -10,13 +10,13 @@ We first need to mirror all network traffic and send it to our rack server. Luck
 
 2 - We need to mirror to this port bellow if the configuration for this.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Intercepting traffic
 
 My dell server is windows so lets check the interfaces we have available.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 I know I plugged the ethernet for port mirroring into NIC1 so thats the interface we need. Lets make note of it's IP.
 
@@ -144,7 +144,7 @@ while True:
 
 ## Showcase
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can see we get notified when I (on a different device) try to login usind a http request.
 
