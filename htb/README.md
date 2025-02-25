@@ -1,7 +1,8 @@
----
-layout: special
----
 # Hack The Box & CPTS Notes
+
+| Layout  |
+| ------- |
+| special |
 
 ## About This Page
 
