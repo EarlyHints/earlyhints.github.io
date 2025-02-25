@@ -1,14 +1,12 @@
 # Kinfe
 
-## Nmap scan
+Nmap scan
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ## Site exploitation
 
-Googling this version of apache we can see someone left a backdoor in it that allows for RCE. This was really fasicinating to read up about and incredibly easy to exploit see bellow on exploit db and wireshark.
-
-{% embed url="https://www.exploit-db.com/exploits/49933" %}
+Googling this version of apache we can see someone left a backdoor in it that allows for RCE. This was really fasicinating to read up about and incredibly easy to exploit see [this ](https://www.exploit-db.com/exploits/49933)on exploit db and the bellow wireshark.
 
 <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
