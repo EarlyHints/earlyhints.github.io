@@ -1,6 +1,6 @@
 # Sau
 
-## Nmap scan
+Nmap scan
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,9 +47,7 @@ To get RCE we do the following steps
 
 Running sudo -l we see we can run: /usr/bin/systemctl status trail.service
 
-{% embed url="https://gtfobins.github.io/gtfobins/systemctl/" %}
-
-This link shows use some exloits. Let try the third one as its shortest.
+This [link ](https://gtfobins.github.io/gtfobins/systemctl/)shows use some exloits. Let try the third one as its shortest.
 
 Running the command we found with sudo -l and then !/bin/bash as outlined in GTFOBins.
 
