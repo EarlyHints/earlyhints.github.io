@@ -1,8 +1,10 @@
 # Hack The Box & CPTS Notes
 
-| layout  |
-| ------- |
-| special |
+\---&#x20;
+
+layout: special&#x20;
+
+\---
 
 ## About This Page
 
