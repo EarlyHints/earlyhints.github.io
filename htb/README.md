@@ -1,11 +1,5 @@
 # Hack The Box & CPTS Notes
 
-\---&#x20;
-
-layout: special&#x20;
-
-\---
-
 ## About This Page
 
 I use Hack The Box daily to sharpen my penetration skills by solving a variety of boxes. Each box I complete helps me refine my enumeration, exploitation, privilege escalation, and post-exploitation techniques.
