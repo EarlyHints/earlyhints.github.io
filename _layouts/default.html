@@ -16,10 +16,43 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      li {
+        float: left;
+        border-right:1px solid #bbb;
+      }
+      
+      li:last-child {
+        border-right: none;
+      }
+      
+      li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+</style>
   </head>
   <body>
     <div class="wrapper">
-
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">HTB Progress</a></li>
+          <li style="float:right"><a href="#about">About Me</a></li>
+      </ul>
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
