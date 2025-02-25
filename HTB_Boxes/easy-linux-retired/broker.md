@@ -16,7 +16,7 @@ And we get a shell!!!
 
 We can run sudo -l and find we can run nginx as root. Screenshotted bellow you can find the steps to exploit this to generate an ssh key as root
 
-{% embed url="https://gist.github.com/DylanGrl/ab497e2f01c7d672a80ab9561a903406" %}
+<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 And we can use the key and get root!!!
 
