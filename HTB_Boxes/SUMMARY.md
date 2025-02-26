@@ -10,7 +10,7 @@
 * [TwoMillion](easy-linux-retired/twomillion.md)
 * [Lame](easy-linux-retired/lame.md)
 * [Keeper](easy-linux-retired/keeper.md)
-* [Kinfe](easy-linux-retired/kinfe.md)
+* [Knife](easy-linux-retired/knife.md)
 * [Bashed](easy-linux-retired/bashed.md)
 * [Broker](easy-linux-retired/broker.md)
 * [Headless](easy-linux-retired/headless.md)
