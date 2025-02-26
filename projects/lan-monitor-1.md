@@ -241,4 +241,4 @@ I have obfuscated the MAC addresses and actual data for security purposes but th
 2. In the dummy data above you can't see this but the main network usage was between 6-10pm when most people on my home network were active.
 3. There was also data at all times from random IoT devices on the network
 
-
+ 
