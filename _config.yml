@@ -24,3 +24,5 @@ defaults:
       name: "README.md"
     values:
       layout: special
+
+auto_description: true
