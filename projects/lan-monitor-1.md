@@ -56,14 +56,18 @@ On double digit days there is on space between the month and day like "Jan 10" a
 
 It took me a long time to work this one out but we now have our precouis data in python!
 
-## Step 3 - Getting hosts and visualising data
+# Step 3 - Getting hosts and visualising data
 
 Our psuedo code is as follows.
 
 1. Run every hour
+
 2. Get all https request destination ip addresses
+
 3. Do a host lookup and save data to file so we don't need to lookup if it's a known host
-4. Store all the data to a file&#x20;
+
+4. Store all the data to a file
+
 5. Use the file to visulaise the data
 
 My code for the domain lookup is as follows:
@@ -229,16 +233,16 @@ for num, mac in enumerate(macs):
     tile.markdown(sitesText)
 ```
 
-## Analysing the data
+# Analysing the data
 
 I have obfuscated the MAC addresses and actual data for security purposes but this is how the data apears.
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-### Findings
+# Findings
 
 1. We can note the main sites visited are all security CMS systems like cloudfront and akamitechnologies. This makes sence because lets say you visit BBC your page may only make a handful of requests to BBC servers but everytime you click or move your mouse a callback will be sent to a captcha service to verify you're a human.
 2. In the dummy data above you can't see this but the main network usage was between 6-10pm when most people on my home network were active.
 3. There was also data at all times from random IoT devices on the network
 
- 
+We will end the project here for now.....
