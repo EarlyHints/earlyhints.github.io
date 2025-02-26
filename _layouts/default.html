@@ -47,6 +47,14 @@
             margin-top: 10px;
             margin-bottom: 10px;
       }
+      h1, h2, h3 {
+          margin-top: calc(0.5em * (7 - var(--level)));
+          margin-bottom: calc(0.5em * (7 - var(--level)));
+      }
+      
+      h1 { --level: 1; }
+      h2 { --level: 2; }
+      h3 { --level: 3; }
     </style>
   </head>
   <body>
