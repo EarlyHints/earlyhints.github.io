@@ -19,8 +19,7 @@ defaults:
       layout: default
 
   - scope:
-      path: ""
+      path: "README.md"
       type: "pages"
-      name: "README.md"
     values:
       layout: special
