@@ -10,6 +10,12 @@ I use Hack The Box daily to sharpen my penetration skills by solving a variety o
 
 Alongside HTB, I’m actively preparing for the CPTS certification, compiling detailed notes on key concepts like network security, exploit development, privilege escalation, and web application security.
 
+## CPTS
+
+I am currently making my way through the CPTS course, you can track my progress bellow!!
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden="" data-card-cover="" data-type="files"></th><th data-hidden="" data-card-target="" data-type="content-ref"></th></tr></thead><tbody><tr><td>CPTS Notes</td><td>Discover my CPTS notes!</td><td><a href=".gitbook/assets/lv58zP0Nc1rigRR47QTY0v21HfHBkBGe.jpg">lv58zP0Nc1rigRR47QTY0v21HfHBkBGe.jpg</a></td><td><a href="https://earlyhints.github.io/CPTS/">https://earlyhints.github.io/CPTS/</a></td></tr></tbody></table>
+
 ## Hack The Box Notes
 
 These are my personal notes from various HTB boxes I have done. I would not consider them writeups as there as some things I don't go fully into detail about.
