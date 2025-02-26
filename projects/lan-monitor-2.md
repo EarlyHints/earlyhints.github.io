@@ -2,7 +2,7 @@
 
 For this project I will be using my dell rack server. The reasons for this are; 1) It is easier to cinnect as it is already in my server room 2) It has better hardware so it will be able to process the network data faster than a rasberry pi.
 
-## LAN mirroring
+# LAN mirroring
 
 We first need to mirror all network traffic and send it to our rack server. Luckly this is fairly easy
 
@@ -12,7 +12,7 @@ We first need to mirror all network traffic and send it to our rack server. Luck
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Intercepting traffic
+# Intercepting traffic
 
 My dell server is windows so lets check the interfaces we have available.
 
@@ -28,7 +28,7 @@ With these installed we can now run this command to save all data to a file.
 windump -1 3 -w capture.pcap
 ```
 
-## Python for credential sniffing
+# Python for credential sniffing
 
 I created the following python script to sniff for common passsword patterns on HTTP FTP and Telnet
 
@@ -135,7 +135,7 @@ while True:
     analyze_pcap()
 ```
 
-### Code explanation
+# Code explanation
 
 1. We create patterns to identify certain request types
 2. We create threaded function that run winDump every 60 seconds and creates a new pcap file
@@ -143,13 +143,13 @@ while True:
 4. Send this data to our slack account
 
 
-## Showcase
+# Showcase
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can see we get notified when I (on a different device) try to login usind a http request.
 
-## Findings
+# Findings
 
 For obvious resons I will not show any real results but the interesting finding were
 

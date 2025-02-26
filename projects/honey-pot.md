@@ -1,6 +1,6 @@
 # Honey pot
 
-## Setup
+# Setup
 
 I set up a rasberry pi with ssh on my network.
 
@@ -10,7 +10,7 @@ Lets check the pi is up and we can ssh into it
 
 Amazing now we will configure opencanary
 
-## OpenCanary setup
+# OpenCanary setup
 
 We can follow the steps [here ](https://github.com/thinkst/opencanary?tab=readme-ov-file#installation-on-ubuntu)
 
@@ -22,7 +22,7 @@ Here you can see when i attempt to check the http page I get an alert
 
 Ok this is now up and running!!
 
-## Router setup
+# Router setup
 
 We now want these ports to be public facing so when crawlers crawl our network we are alerted...
 
@@ -60,13 +60,13 @@ Lets now setup these rules.
 
 And thats the honey pot completed!!
 
-## Interesting findings
+# Interesting findings
 
 After a few days of running here are some noticable results:
 
 *   We have scrapers trying to brute force our ssh constantly. The most common passwords tried were;
 
-    ```json
+    ```python
     ['------fuck------', 'password', 'abc123', 'AA123456', 'root']
     ```
 * This is interesting because the most popular password by a margin was the F word surrounded by dashes which would never be used in production.
@@ -78,7 +78,7 @@ After a few days of running here are some noticable results:
   ```
 * Nmap is expected but InternetMeasurment and Palo alto seem to be companies that scrape the entire internet daily which is fascinating so me. These are massive companies canvasing and footprinting the web!
 
-## Further hardening
+# Further hardening
 
 It would be good if we could find a way to make a script that auto blacklists any ip that tries to login to our SSH honeypot. There is no reason for any legitimate user to ever do this so one attempt should lead to a perminant ban. It will be interesting to see how many ips are banned in a week.
 
