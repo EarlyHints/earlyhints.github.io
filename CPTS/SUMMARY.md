@@ -1,0 +1,15 @@
+# Table of contents
+
+* [CPTS Notes](README.md)
+* [Footprinting](footprinting.md)
+* [Information Gathering - Web Edition](information-gathering-web-edition.md)
+* [Vulnerability Assessment](vulnerability-assessment.md)
+* [Shells & Payloads](shells-and-payloads.md)
+* [Metasploit Framework](metasploit-framework.md)
+* [Password Attacks](password-attacks.md)
+* [Attacking Common Services](attacking-common-services.md)
+* [SQL Injection Fundamentals](sql-injection-fundamentals.md)
+* [Cross-Site Scripting](cross-site-scripting.md)
+* [Web Proxies](web-proxies.md)
+* [Web Attacks](web-attacks.md)
+* [Active Directory Enumeration & Attacks](active-directory-enumeration-and-attacks.md)
