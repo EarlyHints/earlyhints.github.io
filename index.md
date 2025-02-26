@@ -4,19 +4,19 @@ layout: special
 
 # Welcome to My Portfolio!
 
-### About
+## About
 
 Hi, and welcome to my Portfolio! I'm a python developer transitioning into the exciting world of cybersecurity. My journey started with writing code and building software solutions, but my passion for security and ethical hacking has led me to pivot into a career in cybersecurity.
 
 Here, you’ll find a showcase of the projects I’ve worked on—from Python-based applications to security tools and ethical hacking experiments.
 
-### **About Me**
+## About Me
 
 I started as a self-taught Python developer, freelancing on projects that improved automation, web applications, and data analysis. Along the way, I became fascinated with cybersecurity—particularly ethical hacking, penetration testing, and secure coding practices.
 
 Now, I'm honing my skills in network security, threat analysis, and vulnerability assessment while applying my coding expertise to cybersecurity projects.
 
-### Explore My Work
+## Explore My Work
 
 Click on the links bellow to discover my work!
 

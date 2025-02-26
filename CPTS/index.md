@@ -1,3 +1,7 @@
+---
+layout: special
+---
+
 # CPTS Notes
 
 I’m currently in the process of completing the Certified Penetration Testing Specialist (CPTS) course, and I’m actively preparing for the exam. This page serves as a collection of my notes, insights, and key concepts learned during the course, and it will be continuously updated as I progress through the material.
