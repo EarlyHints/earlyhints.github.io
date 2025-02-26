@@ -1,123 +1,25 @@
 ---
-layout: default
+layout: special
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Welcome to My Portfolio!
 
-[Link to another page](./another-page.html).
+### About
 
-There should be whitespace between paragraphs.
+Hi, and welcome to my Portfolio! I'm a python developer transitioning into the exciting world of cybersecurity. My journey started with writing code and building software solutions, but my passion for security and ethical hacking has led me to pivot into a career in cybersecurity.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Here, you’ll find a showcase of the projects I’ve worked on—from Python-based applications to security tools and ethical hacking experiments.
 
-# Header 1
+### **About Me**
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+I started as a self-taught Python developer, freelancing on projects that improved automation, web applications, and data analysis. Along the way, I became fascinated with cybersecurity—particularly ethical hacking, penetration testing, and secure coding practices.
 
-## Header 2
+Now, I'm honing my skills in network security, threat analysis, and vulnerability assessment while applying my coding expertise to cybersecurity projects.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Explore My Work
 
-### Header 3
+Click on the links bellow to discover my work!
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+You can also download my CV to learn more about me or to reach out.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Projects</td><td>Discover my projects!</td><td><a href=".gitbook/assets/istockphoto-865457032-612x612.jpg">istockphoto-865457032-612x612.jpg</a></td><td><a href="https://earlyhints.github.io/projects">https://earlyhints.github.io/projects</a></td></tr><tr><td>HTB Boxes</td><td>Discover my HTB notes!</td><td><a href=".gitbook/assets/ccfe6b5717d93d754aa5a9f07279dce55695bf09.png">ccfe6b5717d93d754aa5a9f07279dce55695bf09.png</a></td><td><a href="https://earlyhints.github.io/htb/">https://earlyhints.github.io/htb/</a></td></tr><tr><td>CPTS Notes</td><td>Discover my HTB CPTS notes!</td><td><a href=".gitbook/assets/lv58zP0Nc1rigRR47QTY0v21HfHBkBGe.jpg">lv58zP0Nc1rigRR47QTY0v21HfHBkBGe.jpg</a></td><td><a href="https://earlyhints.github.io/CPTS/">https://earlyhints.github.io/CPTS/</a></td></tr></tbody></table>
