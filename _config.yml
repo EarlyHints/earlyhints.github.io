@@ -25,4 +25,4 @@ defaults:
     values:
       layout: special
 
-auto_description: true
+auto_desc: true
