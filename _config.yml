@@ -24,5 +24,3 @@ defaults:
       name: "README.md"
     values:
       layout: special
-
-auto_desc: true
