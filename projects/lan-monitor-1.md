@@ -240,3 +240,5 @@ I have obfuscated the MAC addresses and actual data for security purposes but th
 1. We can note the main sites visited are all security CMS systems like cloudfront and akamitechnologies. This makes sence because lets say you visit BBC your page may only make a handful of requests to BBC servers but everytime you click or move your mouse a callback will be sent to a captcha service to verify you're a human.
 2. In the dummy data above you can't see this but the main network usage was between 6-10pm when most people on my home network were active.
 3. There was also data at all times from random IoT devices on the network
+
+

@@ -142,6 +142,7 @@ while True:
 3. We run our main function that loads these pcap and searches for any matching patterns
 4. Send this data to our slack account
 
+
 ## Showcase
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
@@ -156,3 +157,5 @@ For obvious resons I will not show any real results but the interesting finding 
 2. No real http credentails were found. People just don't do that in a real world setting
 3. I manually looked and found a lot of http proxy authentications with base64 encoded username and passwords. This is from a seperate project that I am running but it was interesting to see proxy authentication is done over HTTP not HTTPs. This prompted me to change my proxy passowrds to not resemble any of my normal passswords
 4. It would be not be possible to try SSL stripping with this approach but perhaps it could be a later project...
+
+
