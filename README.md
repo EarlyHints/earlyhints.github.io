@@ -1,2 +1,2 @@
 # Learning
-A repo for all my beginner learning, training and projects
+Cybersecurity Enthusiast | Python Developer | Ethical Hacking & Secure Coding
