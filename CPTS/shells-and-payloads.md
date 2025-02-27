@@ -27,6 +27,7 @@ Comand is:  msfvenom -p \<PATH\_TO\_ EXPLOIT> LHOST=\<IP> LPORT=\<PORT> -f \<elf
 ## Payloads
 
 [This](https://swisskyrepo.github.io/PayloadsAllTheThings/) is a good resource for payloads
+
 [This](https://github.com/bats3c/darkarmour) is a good resource for obfuscated windows binaries
 
 
