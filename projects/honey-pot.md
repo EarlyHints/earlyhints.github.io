@@ -69,13 +69,16 @@ After a few days of running here are some noticable results:
     ```python
     ['------fuck------', 'password', 'abc123', 'AA123456', 'root']
     ```
+
 * This is interesting because the most popular password by a margin was the F word surrounded by dashes which would never be used in production.
 * The http honeypot provides us with user agents the most interesting were;
+
 * ```
   Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
   Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
   Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers
   ```
+
 * Nmap is expected but InternetMeasurment and Palo alto seem to be companies that scrape the entire internet daily which is fascinating so me. These are massive companies canvasing and footprinting the web!
 
 # Further hardening
