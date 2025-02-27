@@ -1,6 +1,6 @@
 # Threats, Vulnerabilities, and Mitigations
 
-### Common Threat Vectors
+## Common Threat Vectors
 
 Message-based vectors - Phising with email or SMS, to steal creds, or download malware or pay for unrendered services.
 
@@ -22,13 +22,13 @@ Defuat creds - No need to explain
 
 Supply-chain - If 3rd party is hacked your network can be accessed
 
-### Phishing&#x20;
+## Phishing&#x20;
 
 Typosquatting - Purchase domain similiar to real domain.
 
 VIshing - Caller ID spoofing and pretexting to trick end user. By impersinating other people.
 
-### Other attack vectors
+## Other attack vectors
 
 * Impersination - Indentify fraud by impersination bank teller to get SSN. So never volunterr information.
 * Water hole attack - Attacker will try gain access to third party service you use. They add malware to this service to try gain access to your servers. Need good firewall and IPS.
@@ -47,7 +47,7 @@ VIshing - Caller ID spoofing and pretexting to trick end user. By impersinating 
 * Mobile device - Install MDM(Mobile Device Manager) on employee phones.  Jailbreaking/ rooting bypassses this. Sideloading install app from untrusted source.
 * Zero-days - New vuln no patches yet.
 
-### Malware types
+## Malware types
 
 * Ransomeware - Encrypts your drive untill you pay money. OS works fine but no access to file. So use backups that you can use.
 * Virus - Repoduces itself over the network. Can be detected by signatures anti-virus uss this to detect. Filesless only operates in memory no files written, makes it harder to detect.
@@ -56,7 +56,7 @@ VIshing - Caller ID spoofing and pretexting to trick end user. By impersinating 
 * Logic bomb - Waits for a condition to trigger the malware. eg login, date/time.
 * Rootkit - Modifies core system files as part of kernal. Anti-Virus cant detect, secure boot within bios prevents this.
 
-### Attack vectors
+## Attack vectors
 
 * Physical attack - Exmaples of this are; lockpicking, breaking a window, RFID cloning, turn of cooling system/ electricity.
 * DoS - We can do this accidentially for example pluging 2 switchs into each other twice. Or a water link or power cute etc. DDOS distributed. Amplified DDOS for example query DNS this returns a lot of data that can overwhelm server.
@@ -69,7 +69,7 @@ VIshing - Caller ID spoofing and pretexting to trick end user. By impersinating 
 * Cryptographic attacks - Collisions where two different input produce same hash. Downgrade attack, SSL stripping to tell user there is only HTTP for the webserver
 * Password attacks - Spraying attack using most common passes online , brute force to crack hash
 
-## Detection and prevention
+# Detection and prevention
 
 IOC - Indicators of compromise; uptick in network activity, changes to certain files or changes of DNS data. Concurrent session usage if user is logged in at two seperate locations simultanouesly. Blocked content like securty update. Impossible logins locations.
 

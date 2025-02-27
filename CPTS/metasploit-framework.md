@@ -2,11 +2,11 @@
 
 We know the basics of msfconsole so I will just be going over the new concepts.
 
-## Payloads
+# Payloads
 
 Once we select a module we can alos select a paylod. Msf will be default use the best one but you can chnage with set payload \<no>. Show payloads
 
-## Encoding
+# Encoding
 
 Msfvenom can encode a payloads.
 
@@ -26,35 +26,35 @@ Can also encode within msfconsole
 
 MSF - VirusTotal can be used to check if a payload will be recognised as a virus
 
-## Database
+# Database
 
 Msfconsole can be used to store hosts, passwords, services in a databse. No writing this up as I have my own note taking methods and this db will be largely redundant for me.
 
-## Plugins
+# Plugins
 
 Can use third party plugins in msf. load \<plugin>
 
 [Here](https://github.com/darkoperator/Metasploit-Plugins) are some user ones a good one is pentest. Take a look and get familar with some of the more popular ones.
 
-## Session
+# Session
 
 Can have multiple sessions at once and you can attach a payload to a session. For example if you have used a webexploit to gain shell access you can then attach a priv esc payload to that shell. Neat!
 
 Use the set session \<no> command
 
-## Adding modules
+# Adding modules
 
 Add modules from serachsploit to /usr/share/metasploit-framework/modules/exploits
 
 And use reload\_all to refresh cache
 
-## Shells
+# Shells
 
 Msf can create nc listeners for shells. Use multi/handler
 
 Once connected can use local exploit suggester module for recon. Have to set session of course.
 
-## Evasion techniques
+# Evasion techniques
 
 Msfconsole can use AES encryption to bypass IDS/IPS
 

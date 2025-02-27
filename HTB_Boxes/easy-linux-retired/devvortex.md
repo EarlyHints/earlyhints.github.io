@@ -4,11 +4,11 @@ description: 10.10.11.242
 
 # Devvortex
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
-### Site enumeration
+## Site enumeration
 
 On the site nothing seem that interesting... After some enumeration with ffuf and gobuster i find a dev subdomain. It a joomla site
 

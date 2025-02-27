@@ -1,8 +1,8 @@
 # Footprinting
 
-## Host based enumeration
+# Host based enumeration
 
-### FTP
+## FTP
 
 Ftp is typically initiated on port 21 and data is sent on port 20.
 
@@ -16,7 +16,7 @@ wget -m --no-passive ftp://ETC can be used to download all files
 
 Useful hint -> If the ftp is encrypted with SSL/TLS can use openssl to intercept the cert and extract a hostname and email
 
-### SMB
+## SMB
 
 Is a file an service manager. Can provide parts of the file system as shares access rights are defined by ACLs and are entirely indedependant of the actual file structure. Typicaly on ports 137, 138 and 139.
 
@@ -28,7 +28,7 @@ rpcclient - Is a tool for enumerating SMB shares to find usernames/ shares/ grou
 
 This can be automates with SMBmap or enum4linux-ng (this one provides more info).
 
-### NFS
+## NFS
 
 Network file system -> Basically a file system accessable to be mounted by client
 
@@ -38,7 +38,7 @@ sudo mount -t nfs \<IP>:/ ./\<OUT\_DIR>/ -o nolock
 
 sudo umount ./\<OUT\_DIR> -> to unmount
 
-### DNS
+## DNS
 
 There is 4 levels of a domain - TLD (Top Level Domain), Second level domain, sub-domains, hosts.
 
@@ -50,7 +50,7 @@ Zone transfer -> dig axfr \<DOMAIN> -> dig axfr \<SUBDOMAIN>.\<DOMAIN>
 
 Can obviously used ffuf to brute force subdomains as well. Remeber the HOST header!
 
-### SMTP
+## SMTP
 
 Is often combind with IMAP or POP3 protocolos for added deatures. Usually rus on port 25 or 587. Once the user is authenticated and SSL/TLS has been done switch ports to encrypted channel.
 
@@ -62,7 +62,7 @@ Can use telnet/nc to send these commands to the SMTP server. Can use a web proxy
 
 Often SMTP servers will be configured to auth all ips known as an open relay We can then spoof emails can test for this with nmap --script smtp-open-relay
 
-### &#x20;fe/ POP3
+## &#x20;fe/ POP3
 
 Internet Message Access Protocol/ Post Office Protocol -> These allow the access of emails IMAP has more feayures like folder/ multiple amilboxes and preselection of emails. on port 143. By default this is unecrypted but many use TLS to encrypt the service.
 
@@ -74,7 +74,7 @@ openssl s\_client -connect \<IP>:\<pop3s/imaps> -> This connects us with ssl enc
 
 A little goggling will get you through the exact IMAP/ POP3 commands to use
 
-### SNMP
+## SNMP
 
 Simple Network Management Protocol - used to monitor devices on a network and each device has a unique address MID (Management Information Base) this is made  up of the OID (Object Identifier) and a unique address and name.
 
@@ -92,7 +92,7 @@ snmpwalk -v2c -c \<OID> \<IP> -> Query OID process
 
 braa \<OID>@\<IP>:.1.3.6.\* -> brute force names
 
-### MySQL
+## MySQL
 
 Can be enumerated with nmap --script mysql\*
 
@@ -101,13 +101,13 @@ mysql -u \<USER> -p \<PASS> -h \<IP> -> used to connect to database\
 
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-### MSSQL
+## MSSQL
 
 Microsoft SQL
 
 python3 mssqlclient.py Administrator@10.129.201.248 -windows-auth
 
-### Oracle TNS
+## Oracle TNS
 
 Oracle Transparent Network Substrate -> A protocle that facilitates communication between applicatiosn and oracle databases over a network. Used by big companies with complex dbs. It has in built encryption SSL/TLS.
 
@@ -119,7 +119,7 @@ sqlplus \<USER>/\<PASS>@\<IP>/XE as sysdba -> connect to db
 
 select name, password from sys.user$;
 
-### IPMI
+## IPMI
 
 Intelligent Platform Management Interface -> Hardware based host managment system used for monitoring. Used before BIOS or when host is powered down. Before RUN!
 
@@ -129,9 +129,9 @@ iDrac is an example of an IPMI!!
 
 Can use metasploit auxiliary/scanner/ipmi/ipmi\_dumphashes to get hashes. And crack in hashcat
 
-## Remote Management Protocols
+# Remote Management Protocols
 
-### Linux
+## Linux
 
 SSH can be auditted with ssh\_audit (dont this is actually useful nmap is good with the bacis stuff and we wont be reversing encryption)
 
@@ -139,7 +139,7 @@ Rsync guide here [https://book.hacktricks.wiki/en/network-services-pentesting/87
 
 R commands can be found on ports 512-514 can can be abused often. Can google this as needed
 
-### Windows
+## Windows
 
 RDP - rdp-sec-check can audit RDP and xfreerdp is used to connect to RDP
 
@@ -149,9 +149,9 @@ WMI - Is an admin managment tool can be connected to with wmiexec which is an im
 
 
 
-## Skills Assessment
+# Skills Assessment
 
-### Easy
+## Easy
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,7 +159,7 @@ We know the ssh login already so lets log in. We go to /home/flag and get the fl
 
 Really was easy!!!
 
-### Medium
+## Medium
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -177,7 +177,7 @@ Now all we do is open the database and search for our credentials and we get the
 
 
 
-### Hard
+## Hard
 
 TCP Scan&#x20;
 

@@ -1,12 +1,12 @@
 # Chemistry
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 We see we have 2 ports open ssh and a flask aplication on port 5000
 
-## Site enumeration
+# Site enumeration
 
 I log in and test out the file upload section. After some googling I find i is vulnerable to [cif ACI](https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f).
 
@@ -36,7 +36,7 @@ _space_group_magn.name_BNS  "P  n'  m  a'  "
 
 The above cif file gives us a revserse shell!!
 
-## Remote shell
+# Remote shell
 
 I upload linpeas.sh and run a scan
 
@@ -56,7 +56,7 @@ Lets crack:
 
 8|victoria|c3601ad2286a4293868ec2a4bc606ba3 -> victoria123
 
-## Ssh session
+# Ssh session
 
 Now lets ssh as rosa with that pasword we found and we get the user flag!
 

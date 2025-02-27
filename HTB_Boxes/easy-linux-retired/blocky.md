@@ -1,10 +1,10 @@
 # Blocky
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-## Exploitation
+# Exploitation
 
 We can see an old version of ProFTP I find this [exploit ](https://www.exploit-db.com/exploits/49908)but it does not work
 
@@ -20,7 +20,7 @@ Downloading this file we can extract a password as follows
 
 And this password and the notch username work on ssh. And we get the user flag!!!
 
-## Priv esc
+# Priv esc
 
 Running sudo -l we see we can run all commads as root ?!!?!!
 

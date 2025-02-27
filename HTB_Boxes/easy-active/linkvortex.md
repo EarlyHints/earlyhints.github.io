@@ -1,10 +1,10 @@
 # LinkVortex
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 Looking at the site we see it is powered by ghost 5.58 and we also find a robots.txt file. We can note that this version of ghost is vulnerable to this [exploit](https://github.com/0xDTC/Ghost-5.58-Arbitrary-File-Read-CVE-2023-40028). But we need credentials first...
 
@@ -18,7 +18,7 @@ The credentials are for email test@example.com. But this email does not work... 
 
 Lets try that exploit linked above. And we are able to read files!! After a little googling i decide to read the /var/lib/ghost/config.production.json file and find ssh credentials for bob!
 
-## Priv esc
+# Priv esc
 
 Running sudo -l we find an interesting command that we can run at root. By creating symbolic links we can exploit it to read the root flag... This is not really priv esc but we get the flag anyway.
 

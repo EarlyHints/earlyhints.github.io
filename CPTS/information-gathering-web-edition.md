@@ -8,19 +8,19 @@ Subdomain enumeration with ffuf
 
 Can look up certificates to find subdomains with [crt.sh](https://crt.sh)
 
-## Fingerprinting
+# Fingerprinting
 
 wafw00f -> Can detect WAF on sites
 
 nikto -> Versitile tool for web scanning
 
-## Crawlers
+# Crawlers
 
 scrapy -> Very good for custom spider
 
 reconspider -> get emails and other helpful links from site
 
-## Dorking
+# Dorking
 
 &#x20;[Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 
@@ -30,7 +30,7 @@ Wayback machine mentioned
 
 finalrecon -> automate recon process
 
-## Assesment
+# Assesment
 
 This was pretty simple all we did was enumerate subdomains with ffuf (twice).
 

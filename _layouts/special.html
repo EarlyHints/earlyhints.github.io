@@ -57,7 +57,7 @@
     justify-content: center;
     gap: 20px;
   }
-  
+
   tr {
     display: flex;
     flex-direction: column;
@@ -72,7 +72,18 @@
     position: relative;
     cursor: pointer;
   }
-  
+  td {
+    border-bottom: none;
+  }
+  @media (min-width: 49px) {
+    tbody {
+      gap: 10px;
+    }
+    tr {
+      width: 180px;
+    }
+  }
+
   tr:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
@@ -111,6 +122,9 @@
   tr td:nth-child(1) {
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid white;
   }
   
   tr td:nth-child(2) {

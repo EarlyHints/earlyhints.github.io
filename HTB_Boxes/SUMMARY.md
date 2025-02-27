@@ -1,6 +1,6 @@
 # Table of contents
 
-## Easy Linux - Retired
+# Easy Linux - Retired
 
 * [Cap](README.md)
 * [Sau](easy-linux-retired/sau.md)
@@ -18,7 +18,7 @@
 * [Blocky](easy-linux-retired/blocky.md)
 * [CozyHosting](easy-linux-retired/cozyhosting.md)
 
-## Easy - Active
+# Easy - Active
 
 * [Alert](easy-active/alert.md)
 * [Chemistry](easy-active/chemistry.md)

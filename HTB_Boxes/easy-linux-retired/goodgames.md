@@ -1,10 +1,10 @@
 # GoodGames
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## Site scan
+# Site scan
 
 We can see that the site is running on flask. And a quick google serach shows it is vunerable to RCE. lets look at the site and come back to this.
 
@@ -24,7 +24,7 @@ Let's try sqlmap. I found this [website ](https://www.comparitech.com/net-admin/
 
 Beacause I don't want to run hashcat I just googled hash lookup and found the password was "superadministrator"
 
-## Site scan 2
+# Site scan 2
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 

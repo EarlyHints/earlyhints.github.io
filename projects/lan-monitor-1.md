@@ -4,7 +4,7 @@ description: How I set up a python app to monitor my home LAN and track websites
 
 # LAN Monitor 1
 
-## Step 1 - Configure router and syslogs
+# Step 1 - Configure router and syslogs
 
 I have a draytek router on my home netwrok and the process for keeping logs is rather simple. Got to System Mainenance > SysLog and configure the settings
 
@@ -20,7 +20,7 @@ The last step is to go into the utility and configure the database record.
 
 As you can see I'm only saving the User Access data as that's where all the fun stuff is!
 
-## Step 2 - Get data to python
+# Step 2 - Get data to python
 
 We're using a tool called pyodbc to access and query databases in python. So the first step is to install Microsoft Access to be able to open the ".mdb" file from the syslog utility. The link for that is [here](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
 

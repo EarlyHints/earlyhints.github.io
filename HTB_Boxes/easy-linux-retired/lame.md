@@ -1,10 +1,10 @@
 # Lame
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-## Exploitation
+# Exploitation
 
 We can not they are using an outdated version of samba taking a quick look at serachsploit we find a msf payload that will work
 

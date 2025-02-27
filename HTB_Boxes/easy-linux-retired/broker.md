@@ -1,10 +1,10 @@
 # Broker
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 We get promted with a basic auth we can try admin: admin and get access. Easy!
 
@@ -12,7 +12,7 @@ We are now on an ActiveMQ page on msfconsole there are some modules on this but 
 
 And we get a shell!!!
 
-## Priv esc
+# Priv esc
 
 We can run sudo -l and find we can run nginx as root. Screenshotted bellow you can find the steps to exploit this to generate an ssh key as root
 

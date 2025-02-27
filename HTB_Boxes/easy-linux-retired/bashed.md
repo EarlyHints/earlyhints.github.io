@@ -1,10 +1,10 @@
 # Bashed
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 We can find a site that links to this [github ](https://github.com/Arrexel/phpbash)there is supposed to be a phpbash.php file but we cant find it lets run ffuf to find hidden directories.
 
@@ -14,7 +14,7 @@ We can find a site that links to this [github ](https://github.com/Arrexel/phpba
 
 We can now get the user flag!!
 
-## Priv esc
+# Priv esc
 
 To get a more stable shell we use this reverse shell
 

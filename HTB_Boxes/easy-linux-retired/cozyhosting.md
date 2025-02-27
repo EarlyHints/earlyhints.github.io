@@ -1,10 +1,10 @@
 # CozyHosting
 
-## Nmap scan
+# Nmap scan
 
 <figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 Looking at the site it is hard to indentify what it is running but I rembered something from an ippsec video that helps me. You can identify services by the applications 404 page!!! This [resource ](https://0xdf.gitlab.io/cheatsheets/404)helps.
 
@@ -28,7 +28,7 @@ We can swap that with our current session and after I get in I find executessh i
 
 And we have a shell!
 
-## Priv esc
+# Priv esc
 
 Linpeas and sudo -l do not find anything of not but we do have a jar file
 

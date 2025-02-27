@@ -2,7 +2,7 @@
 
 * [Page](README.md)
 
-## Study Notes
+# Study Notes
 
 * [General Security Concepts](study-notes/general-security-concepts.md)
 * [Threats, Vulnerabilities, and Mitigations](study-notes/threats-vulnerabilities-and-mitigations.md)

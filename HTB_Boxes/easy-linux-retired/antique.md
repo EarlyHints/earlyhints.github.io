@@ -1,6 +1,6 @@
 # Antique
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
@@ -8,7 +8,7 @@ UDP scan
 
 <figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-## Exploitation
+# Exploitation
 
 This is an odd one. We can see is running a telnet server for whqat seems to be a printer and there is an snmp server as well. After some digging we can find this [vulnerability ](https://www.exploit-db.com/exploits/22319)in the JetAdmin service.
 
@@ -28,7 +28,7 @@ We can now authenticate to telnet running help we can see we can exec commands l
 
 And boom we have user!!!
 
-## Priv esc
+# Priv esc
 
 Lets run Linpeas. We find the following open port.
 

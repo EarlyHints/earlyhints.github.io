@@ -1,13 +1,13 @@
 # General Security Concepts
 
-### Security controls
+## Security controls
 
 * Technical controls - Firewalls, anti-virus
 * Managerial controls - Security policies sent to employees
 * Operational controls - Awereness programs, security gaurd
 * Physyical controls - PINs, badge readers, locks
 
-### The CIA Triad
+## The CIA Triad
 
 * Confidentiality - Encryption/ Access controls
 * Avialability -System allways available and backups
@@ -15,7 +15,7 @@
 
 Non-repudiation - Hash the data and compare at endpoint, do verify the sender as well we use a private key that can be decoded with a public key. RSA
 
-### AAA Framework
+## AAA Framework
 
 * Authentication - Login
 * Autherisation - Level of acces the user has
@@ -25,13 +25,13 @@ To auth a device our CA (Certificate Authority) creates a cert for an endpoint a
 
 Autherisation done with roles and groups.
 
-### Gap Analysis
+## Gap Analysis
 
 Process of mapping where we are to where we would like to be securitywise.
 
 Indentify weaknesses and create a path to the implemention of fixes.
 
-### Zero Trust
+## Zero Trust
 
 Nothing is trusted aka even if you gain access you cant use everything.
 
@@ -43,7 +43,7 @@ Controlling trust - Adaptive identity, location, IP address and additional finge
 
 PEP (Policy Enforcment Point) gathers all info about traffic and sends to PDP (Policy Decision Point) to make a descion.
 
-### Deception and Disruption
+## Deception and Disruption
 
 Honeybots -Honeynets - Honeyfiles.
 
@@ -51,7 +51,7 @@ Alerts can be triggered and everything is logged. To see attack vectors tried.
 
 Honeytokens can be fake API keys that you leak on a cloud servr to see if attackers try to use them.
 
-### Public Key Infrastructure (PKI)
+## Public Key Infrastructure (PKI)
 
 Asymmetric - Public key can encrypt ONLY, Private key decrypt ONLY. Public key can be given out to anyone. Key escrow a service that manages the keys of individuals
 
@@ -59,7 +59,7 @@ Symetric - One key for encryption and decryption. TOP SECRET
 
 Key exchange - Out-of-band thats in person, on the phone, etc. In band can be done by encrypting the key with asymmetric. **Symetric key from asymmetric keys** - Two pairs of differnt private/ public keys can be combined to create a symmetric key without trasnfering any data on the network!
 
-### Encryption Technologies
+## Encryption Technologies
 
 TPM (Trusted Platfrom Module) is a cryptography hardware component. Key generators, cryptographic functions/ has persistant memory as keys are burned in at manufactoring/ password protected.
 
@@ -69,7 +69,7 @@ Keys are accessed from a key management system.
 
 Secure enclave is a security proccessor it has its own boot ROM, monitors system boots process, generates random nums, real-time memory encryption, AES encryption and more..
 
-### Obfuscation&#x20;
+## Obfuscation&#x20;
 
 Stegenography
 
@@ -77,7 +77,7 @@ Tokenization - Replace data with placeholder sent by server
 
 Data masking - Hide some of sensitive original data
 
-### Hashing and Digital Signatures
+## Hashing and Digital Signatures
 
 Collision - Different inputs producing same hash. Problem. MD5 has with issue
 
@@ -85,7 +85,7 @@ Salt is added to the hash - each user has a randomly generated salt
 
 Digital Signature = file -> hashed -> hash is ecrypted with private key -> appended to file
 
-### Certificates&#x20;
+## Certificates&#x20;
 
 Issued by CA (Sertificate Authority).
 

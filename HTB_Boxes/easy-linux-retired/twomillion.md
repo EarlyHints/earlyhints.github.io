@@ -1,10 +1,10 @@
 # TwoMillion
 
-## Nmap
+# Nmap
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-## Site enumeration
+# Site enumeration
 
 We find an invite page that wants us to hack in!&#x20;
 
@@ -48,7 +48,7 @@ So lets make a posrt request to that endpoint. We get back a base64 encoded stri
 
 We make a user and get in we see an access page with an interesting api endpoint...
 
-## API Enumeration
+# API Enumeration
 
 /api/v1 -> Give us a bunch on intereting endpoints
 
@@ -58,7 +58,7 @@ Testing the /vpn/generate enpoint we find we can do code injection. So let's get
 
 Once in we find admin creds for ssh
 
-## Priv esc
+# Priv esc
 
 Let's loot at the mysql server first we find some hashed passwords... Let come back to this if linpeas doesnt find anything.
 
