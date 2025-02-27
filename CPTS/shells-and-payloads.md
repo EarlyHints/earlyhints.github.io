@@ -26,9 +26,9 @@ Comand is:  msfvenom -p \<PATH\_TO\_ EXPLOIT> LHOST=\<IP> LPORT=\<PORT> -f \<elf
 
 ## Payloads
 
-* [https://swisskyrepo.github.io/PayloadsAllTheThings/](https://swisskyrepo.github.io/PayloadsAllTheThings/) - Good resource for payloads
-* [https://github.com/bats3c/darkarmour](https://github.com/bats3c/darkarmour) - Good for obfuscated windows binaries
-* msfvenom - See above
+[This](https://swisskyrepo.github.io/PayloadsAllTheThings/) is a good resource for payloads
+[This](https://github.com/bats3c/darkarmour) is a good resource for obfuscated windows binaries
+
 
 Msfconsole is a very easy tool and makes things very automated! Use search to look for exploits
 

@@ -12,7 +12,12 @@ description: 10.10.11.242
 
 On the site nothing seem that interesting... After some enumeration with ffuf and gobuster i find a dev subdomain. It a joomla site
 
-I followed this [guide ](https://hackertarget.com/attacking-enumerating-joomla/)on joomla enumeration and found the version 4.2.6 in use> I then found this [exploit ](https://github.com/Acceis/exploit-CVE-2023-23752)![](<../.gitbook/assets/image (47).png>)user: lewis password: P4ntherg0t1n5r3c0n##
+I followed this [guide ](https://hackertarget.com/attacking-enumerating-joomla/)on joomla enumeration and found the version 4.2.6 in use.
+
+I then found this [exploit ](https://github.com/Acceis/exploit-CVE-2023-23752) running it we get the following output.
+
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+lewis:P4ntherg0t1n5r3c0n##
 
 We are now logged in. We get a notification that we are using php version 7.4.3 which is old....
 
