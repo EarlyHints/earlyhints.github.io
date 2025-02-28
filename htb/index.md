@@ -4,11 +4,11 @@ layout: special
 
 # Hack The Box & CPTS Notes
 
-# About This Page
+# Welcome to My HTB & CPTS Journey!
 
-I use Hack The Box daily to sharpen my penetration skills by solving a variety of boxes. Each box I complete helps me refine my enumeration, exploitation, privilege escalation, and post-exploitation techniques.
+I’m always tackling new challenges on Hack The Box to level up my skills in penetration testing. Each box helps me get better at skills suck as enumeration, exploitation, and privilege escalation.
 
-Alongside HTB, I’m actively preparing for the CPTS certification, compiling detailed notes on key concepts like network security, exploit development, privilege escalation, and web application security.
+I’m also prepping for the CPTS certification, diving into network security, exploit dev, and more. This page is where I track my progress and share what I’ve learned along the way.
 
 # CPTS
 

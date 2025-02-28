@@ -2,19 +2,23 @@
 layout: special
 ---
 
+# Home
+
 # Welcome to My Portfolio!
 
-# About My Page
+This site is a showcase of my work in network security, penetration testing, and ethical hacking. Here, you'll find projects, research notes, and hacking challenges that highlight my hands-on experience in cybersecurity.
 
-Hi, and welcome to my Portfolio! I'm a python developer transitioning into the exciting world of cybersecurity. My journey started with writing code and building software solutions, but my passion for security and ethical hacking has led me to pivot into a career in cybersecurity.
+I’ve built tools to monitor network traffic, deployed honeypots to track malicious activity, and conducted security audits to strengthen defenses. I also document my Hack The Box progress and CTF challenges, sharing insights along the way.
 
-Here, you’ll find a showcase of the projects I’ve worked on—from Python-based applications to security tools and ethical hacking experiments.
+As I work toward my CPTS certification, this site will continue to grow with new projects and research. If you're a potential employer or fellow security enthusiast, take a look around—let’s connect! 
 
 # About Me
 
-I started as a self-taught Python developer, freelancing on projects that improved automation, web applications, and data analysis. Along the way, I became fascinated with cybersecurity—particularly ethical hacking, penetration testing, and secure coding practices.
+I’m a freelance Python developer transitioning into cybersecurity, with a strong focus on network security, penetration testing, and threat detection. My background in software development has given me an understanding of how systems work—and how they can be broken.
 
-Now, I'm honing my skills in network security, threat analysis, and vulnerability assessment while applying my coding expertise to cybersecurity projects.
+My journey into cybersecurity started with a curiosity for ethical hacking and a drive to understand the techniques used by attackers. Since then, I’ve been hands-on with security research, Hack The Box challenges, and real-world security projects, constantly refining my skills.
+
+My goal is to apply my knowledge to strengthen defenses, uncover vulnerabilities, and stay ahead of emerging threats.
 
 # Explore My Work
 
