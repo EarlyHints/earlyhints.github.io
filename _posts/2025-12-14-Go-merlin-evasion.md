@@ -40,8 +40,8 @@ upx --best --lzma agent.exe
 ```
 {: .nolineno }
 
-This removes all readable strings and shrinks our executable to about 40% however there is a major drawback - on VirusTotal we are now flagged by 24 vendors...
-This is because UPX is inherently suspicious and often used by malicious actors so it raised a lot of red flags.
+This removes all readable strings and shrinks our executable to about 40% however there is a major drawback... on VirusTotal we are now flagged by 24 vendors.
+This is because UPX is inherently suspicious and often used by malicious actors so it rightly raised a lot of red flags.
 
 ## Signing
 We have effectively reached the goal we set out, namely to improve OPSEC by obfuscating our Merlin executable buttt getting flagged by 17 vendors seems like too many...
@@ -57,8 +57,8 @@ And now only 7 security vendors flag the file on VirusTotal!!
 ## Closing thoughts
 Mission accomplished!
 
-With relatively minimal evasion techniques we managed to to dupe 65/72 security vendors and we obfuscated most of the cleartext strings.
-I think it's interesting that by only adding a certificate to the malicious Merlin beacon 10 security vendors dropped detection. Perhaps this signals an over reliance and trust on certificates....
+With relatively minimal low effort evasion techniques we managed to dupe 65/72 security vendors and obfuscate most of the cleartext strings.
+I think it's interesting that by adding a certificate to the malicious Merlin beacon, 10 security vendors dropped detection. Perhaps this signals an over reliance and trust on certificates...
 
 This is good enough for my current use case but perhaps I will revisit more thorough evasion techniques in a future post.
 See you next time!
