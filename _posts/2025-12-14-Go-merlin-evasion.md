@@ -3,7 +3,7 @@ title: Go evasion techniques (Merlin C2)
 date: 2025-12-14 23:00:00
 categories: Blogging
 tags: [go, obfuscation, upx, garble, merlin, signtool]
-description: Compiling go in obfuscated fasions
+description: Compiling and obfuscating Go
 ---
 
 
@@ -15,7 +15,7 @@ The problem is that by default when you compile a go binary it leaks EVERYTHING 
 Bad OPSEC.....
 ## Garble
 We can obfuscate the code with the garble go package.
-First make sure you have go version 1.25+ you can download the stable release from here https://go.dev/dl/.
+First make sure you have go version 1.25+ you can download the stable release from [here](https://go.dev/dl/).
 
 Then download Garble in the merlin-agent directory and build:
 
