@@ -52,7 +52,7 @@ To demonstrate the logs you would expect to see in a BEC I used the above phishi
 
 Lets see the logs!
 
-![SaaS log timeline](/assets/img/AiTM/logs.png)
+![SaaS log timeline](/assets/img/AitM/logs.png)
 _Fig 3: SaaS log timeline_
 
 - First there is a login using the IP 162.159.113[.]89, the IP belongs to the Cloudflare ASN. This log was generated when the server (which in this case I had hosted on Cloudflare) proxied the victims authentication request to Microsoft and received the session cookies.
